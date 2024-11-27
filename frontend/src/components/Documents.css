@@ -1,0 +1,210 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container */
+  div {
+    margin: 15px;
+    padding: 15px;
+    background-color: rgb(248, 245, 245);
+    color:black;
+    font-size: 16px;
+  }
+  
+  /* Title and Header */
+  h2 {
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Create New Document Box */
+  
+  input, textarea {
+    padding: 10px;
+    margin: 8px 0;
+    width: 90%;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background-color: #fafafa;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Create Button */
+  button {
+    padding: 10px 15px;
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  /* Search & Sort Section */
+  div > div > input,
+  div > div > select {
+    display: inline-block;
+    width: calc(33% - 10px);
+    margin-right: 10px;
+  }
+  
+  div > div > select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+  }
+  
+  div > div > select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Document Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid #e1e1e1;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    color: #333;
+    font-size:16px;
+  }
+  
+  th {
+    background-color: #f1f1f1;
+  }
+  
+  td button {
+    background-color: #28a745;
+    color: white;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  td button:hover {
+    background-color: #218838;
+  }
+  
+  td button:active {
+    background-color: #1e7e34;
+  }
+  
+  /* Document Content */
+  .document-content {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .document-content h3 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .docu-name{
+    color:#000;
+  }
+  
+  .document-content p {
+    white-space: pre-wrap; /* Ensures that text formatting like newlines are preserved */
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  /* Mobile Responsive */
+  @media screen and (max-width: 768px) {
+    div > div > input,
+    div > div > select {
+      width: 100%;
+      margin-right: 0;
+    }
+  
+    table {
+      font-size: 14px;
+    }
+  
+    .document-content p {
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 16px;
+    }
+  }
+
+
+  .create-form {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .create-form input, .create-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .create-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .create-form button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .page{
+    margin-left: 10px;
+    margin-right:10px;
+  }
